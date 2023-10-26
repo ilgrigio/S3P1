@@ -101,6 +101,11 @@ console.log(giveMeRandom(7));
 
 /* SCRIVI QUI LA TUA RISPOSTA */
 
+const area = function (l1, l2) {
+  return l1 * l2;
+};
+console.log(area(4, 7));
+
 /* ESERCIZIO 2
  Scrivi una funzione chiamata "crazyDiff" che calcola la differenza assoluta tra un numero 
  fornito e 19. Se il valore calcolato è più grande di 19, la funzione deve tornare tale 
