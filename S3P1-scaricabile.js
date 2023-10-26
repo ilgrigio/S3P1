@@ -63,7 +63,7 @@ console.log("-----Prima lettera Maiuscola-----");
 
 const upperFirst = function (stringa) {
   const parole = stringa.split(" "); // ["il", "mondo", "è", "bello", "perchè", "è", "vario"]
-  let finale = "";
+  let finale = [];
   for (let i = 0; i < parole.length; i++) {
     finale += parole[i].charAt(0).toUpperCase() + parole[i].slice(1);
   }
@@ -83,10 +83,13 @@ console.log(upperFirst("il mondo è bello perché è vario"));
 // };
 // console.log(giveRandom());
 const giveMeRandom = function (n) {
-  return (n = [Math.floor(Math.random() * 10) + 1]);
+  const arrayNum = [];
+  for (let i = 0; i <= n; i++) {
+    arrayNum.push(Math.floor(Math.random() * 10) + 1);
+  }
+  return arrayNum;
 };
-giveMeRandom();
-console.log(giveMeRandom());
+console.log(giveMeRandom(7));
 // Math.floor(); // arrotonda per difetto
 // Math.ceil(); // arrotonda per eccesso
 
