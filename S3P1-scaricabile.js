@@ -78,10 +78,15 @@ console.log(upperFirst("il mondo è bello perché è vario"));
 
 /* SCRIVI QUI LA TUA RISPOSTA */
 
-const giveRandom = function (n = Math.floor(Math.random() * 10) + 1) {
-  return n;
+// const giveRandom = function (n = Math.floor(Math.random() * 10) + 1) {
+//   return n;
+// };
+// console.log(giveRandom());
+const giveMeRandom = function (n) {
+  return (n = [Math.floor(Math.random() * 10) + 1]);
 };
-console.log(giveRandom());
+giveMeRandom();
+console.log(giveMeRandom());
 // Math.floor(); // arrotonda per difetto
 // Math.ceil(); // arrotonda per eccesso
 
